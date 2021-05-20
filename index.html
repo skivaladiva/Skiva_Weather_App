@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Weather Forecast</title>
+    <meta charset="UTF-8" />
+    <script src="https://kit.fontawesome.com/57336ff52d.js" crossorigin="anonymous"></script>
+    <link href="src/styles.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Arimo&family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+
+        <h1>Curious how the weather will be?</h1>
+
+        <div class="currentCity"> Which city are you looking for? </div>
+
+        <form class="searchForm">
+            <label class="enterForm" for="searchCity"></label>
+            <input type="text" class="enterCity" id="searchCity" placeholder="Enter your city here">
+            <button type="Submit" class="searchButton">Search for your city</button>
+        </form>
+
+
+        <button class="locationButton"> Check your current location </button>
+
+
+
+
+        <div class="currentWeather" style="width: 100%;">
+
+            <h5 class=dateTime id=today> Today</h5>
+            <span class="currentWeatherData">
+                <div class="row">
+                    <div class="col-3"> <i class="fas fa-umbrella" id=currentIcon></i></div>
+                    <div class="col-3">
+                        <p class="currentDegree" id="degree"><span class="degreeNumber" id=degreeNumber>13</span><span
+                                class=fOrC>°C</span></p>
+                    </div>
+                    <div class="col-3">
+                        <p class="currentWeatherDescription"> Rainy</p>
+                    </div>
+                    <div class="col-3" id=changeUnit><button class=changeUnit id=celsius disabled>°C</button>
+                        <button class=changeUnit id=fahrenheit>°F</button>
+                    </div>
+                </div>
+        </div></span>
+    </div>
+
+
+    <div class="row">
+        <div class=col>
+            <div id="weatherForecast">
+
+
+                <h5 id="weatherForecastTitle"> Tomorrow the weather will be</h5>
+                <span class="weatherForecastData">
+                    <div class="row">
+                        <div class="col-6"> <i class="fas fa-igloo" id=forecastIcon></i></div>
+                        <div class="col-6">
+                            <p class="forecastDegree" id="degree"> <span class="degreeNumber">06</span>°C</p>
+                        </div>
+                    </div>
+                </span>
+                <p class="forecastWeatherDescription"> Ice Cold</p>
+            </div>
+        </div>
+        <div class=col>
+            <div id="weatherForecast">
+                <h5 class="weatherForecastTitle"> The day after tomorrow the weather will be</h5>
+
+                <span id="weatherForecastDescription">
+                    <div class="row">
+                        <div class="col-6"> <i class="fas fa-wind" id=forecastIcon></i></div>
+                        <div class="col-6">
+                            <p class="forecastDegree" id="degree"><span class="degreeNumber">08</span>°C</p>
+                        </div>
+                    </div>
+
+                </span>
+                <p class="forecastWeatherDescription"> Windy </p>
+            </div>
+        </div>
+        <div class=col>
+            <div id="weatherForecast">
+                <h5 id="weatherForecastTitle"> In three days the weather will be</h5>
+                <span class="weatherForecastDescription">
+                    <div class="row">
+                        <div class="col-6"> <i class="fas fa-seedling" id=forecastIcon></i></div>
+                        <div class="col-6">
+                            <p class="forecastDegree" id="degree"><span class="degreeNumber">10</span>°C</p>
+                        </div>
+                    </div>
+                </span>
+                <p class="forecastWeatherDescription"> Slightly Sunny</p>
+            </div>
+        </div>
+        <div class=col>
+            <div id="weatherForecast">
+                <h5 id="weatherForecastTitle"> In four days the weather will be</h5>
+                <span class="weatherForecastDescription">
+                    <div class="row">
+                        <div class="col-6"> <i class="fas fa-eye-slash" id=forecastIcon></i></div>
+                        <div class="col-6">
+                            <p class="forecastDegree" id="degree"><span class="degreeNumber">12</span>°C</p>
+                        </div>
+                    </div>
+                </span>
+                <p class="forecastWeatherDescription"> Very Foggy </p>
+            </div>
+        </div>
+        <div class=col>
+            <div id="weatherForecast">
+                <h5 id="weatherForecastTitle"> In five days the weather will be</h5>
+                <span class="weatherForecastDescription">
+                    <div class="row">
+                        <div class="col-6"> <i class="fas fa-umbrella" id=forecastIcon></i></div>
+                        <div class="col-6">
+                            <p class="forecastDegree" id="degree"><span class="degreeNumber">13</span>°C</p>
+                        </div>
+                    </div>
+                </span>
+                <p class="forecastWeatherDescription"> Heavily clouded </p>
+            </div>
+        </div>
+
+        <div class=col>
+            <div id="weatherForecast">
+                <h5 id="weatherForecastTitle">Weather is not predictable six days in advance,</h5>
+                <span class="weatherForecastDescription">
+                    <div class="row">
+                        <div class="col-6"> <i class="fas fa-question" id=forecastIcon></i></div>
+                        <div class="col-6">
+                            <p class="forecastDegree">?°C</p>
+                        </div>
+                    </div>
+                </span>
+                <p class="forecastWeatherDescription"> but you will see! </p>
+            </div>
+
+        </div>
+    </div>
+
+    </div>
+
+    </div>
+    <script src="src/index.js"></script>
+</body>
+
+</html>

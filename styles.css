@@ -1,0 +1,161 @@
+body {
+  background: #303f9f;
+  color: #212121;
+  font-family: "Arimo", sans-serif;
+}
+
+h1 {
+  text-align: center;
+  padding: 50px;
+  color: #c5cae9;
+  background: #3f51b5;
+}
+
+h5 {
+  font-family: "Arimo", sans-serif;
+}
+
+form {
+  text-align: center;
+}
+
+.searchForm {
+  line-height: 30px;
+
+  width: 100%;
+}
+
+.currentCity {
+  color: #ff4081;
+  text-align: center;
+  padding: 10px;
+  font-size: 20px;
+  font-family: "Arimo", sans-serif;
+}
+button {
+  color: #303f9f;
+  background-color: #c5cae9;
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 10px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: block;
+  width: 100%;
+  border: #ff4081 solid;
+}
+
+button:hover {
+  cursor: pointer;
+  color: #303f9f;
+  background-color: #ff4081;
+  border: #ff4081;
+}
+
+.enterCity {
+  border-radius: 5px;
+  padding: 10px;
+  border-color: #2994b2 solid;
+  width: 100%;
+}
+
+#currentIcon {
+  color: #ff4081;
+  line-height: 50px;
+  font-size: 110px;
+  padding: 20px;
+}
+
+.currentDegree {
+  color: #ff4081;
+  font-weight: bold;
+  font-size: 40px;
+  padding: 20px;
+}
+
+.currentWeather {
+  background-color: #ffffff;
+  padding: 10px;
+  border: #ff4081 solid;
+  margin: 10px auto;
+  border-radius: 5px;
+  display: block;
+}
+
+.currentWeatherDescription {
+  color: #ff4081;
+  font-weight: bold;
+  font-size: 40px;
+  padding: 20px;
+}
+
+#weatherForecast {
+  background-color: #ffff;
+  padding: 10px;
+  border: #757575 solid;
+  margin: 10px auto;
+  border-radius: 5px;
+  width: 18rem;
+}
+
+#forecastIcon {
+  color: #757575;
+  line-height: 50px;
+  font-size: 50px;
+  padding: 20px;
+}
+
+.forecastDegree {
+  color: #757575;
+  font-weight: bold;
+  font-size: 40px;
+  padding: 20px;
+}
+
+.row {
+  text-align: center;
+}
+
+.forecastWeatherDescription {
+  color: #757575;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.dateTime {
+  color: #ff4081;
+  text-align: center;
+  font-family: "Arimo", sans-serif;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.changeUnit {
+  font-family: "Arimo", sans-serif;
+  background: #ff4081;
+  border-radius: 50px;
+  color: #ffff;
+  border: #ff4081 solid;
+  padding: 5px;
+  margin: 5px;
+}
+
+.changeUnit:active {
+  color: #ffff;
+  background: #ff4081;
+}
+.changeUnit:disabled {
+  color: #c5cae9;
+  background: #ffff;
+  border: #757575 solid;
+}
+.changeUnit:hover {
+  color: #c5cae9;
+  background: #ffff;
+  border: #757575 solid;
+}
+#changeUnit {
+  padding: 25px;
+}
